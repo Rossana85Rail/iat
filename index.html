@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IAT – Omosessuale vs Eterosessuale</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="intro">
+    <h1>Benvenutə!</h1>
+    <p>
+      Questo test misura le associazioni implicite tra <strong>coppie omosessuali / eterosessuali</strong>
+      e concetti <strong>positivi / negativi</strong>. Il test è anonimo.
+    </p>
+    <p>
+      Inserisci le <strong>prime 3 lettere del tuo nome</strong> e le <strong>prime 3 del cognome</strong> per creare un codice identificativo.
+    </p>
+    <input type="text" id="participant-code" placeholder="Esempio: MARVER" maxlength="6">
+    <button onclick="startIAT()">Inizia il test</button>
+  </div>
+
+  <div id="iat-container" style="display: none;">
+    <!-- Qui verrà eseguito il test -->
+    <canvas id="iat-canvas" width="800" height="400"></canvas>
+  </div>
+
+  <script src="js/iat.js"></script>
+</body>
+</html>
